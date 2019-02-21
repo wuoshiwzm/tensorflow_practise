@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tensorflow_practise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tensorflow_practise.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a sample CNN.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/a sample CNN.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model save or load.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model save or load.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_email_classify/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_email_classify/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cnn_email_classify/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="384">
+              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
               <folding>
                 <element signature="e#22#45#0" expanded="true" />
               </folding>
@@ -29,19 +28,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cnn_email_classify/text_cnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnn_email_classify/data_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state>
+              <caret column="63" selection-start-column="63" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -73,10 +63,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="35" />
+    <option name="x" value="55" />
+    <option name="y" value="51" />
     <option name="width" value="1359" />
-    <option name="height" value="988" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -88,12 +78,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="TensorFlowPractise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TensorFlowPractise" type="462c0819:PsiDirectoryNode" />
+              <item name="tensorflow_practise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tensorflow_practise" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TensorFlowPractise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TensorFlowPractise" type="462c0819:PsiDirectoryNode" />
+              <item name="tensorflow_practise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tensorflow_practise" type="462c0819:PsiDirectoryNode" />
               <item name="cnn_email_classify" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -103,8 +93,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cnn_email_classify" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cnn_email_classify" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -140,6 +130,9 @@
       <module name="tensorflow_practise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cnn_email_classify" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -182,15 +175,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14702155" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14699684" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.21832883" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="2" visible="true" weight="0.32614556" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="2" visible="true" weight="0.4635193" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32884097" />
@@ -252,34 +244,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/MLr/Anaconda3.5.0.1/Lib/site-packages/tensorflow/python/platform/flags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1646">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnn_email_classify/data_helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/MLr/Anaconda3.5.0.1/Lib/site-packages/tensorflow/python/platform/flags.py" />
     <entry file="file://$PROJECT_DIR$/cnn_email_classify/text_cnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="17">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cnn_email_classify/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="384">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding>
             <element signature="e#22#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnn_email_classify/data_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,5 @@
 # 训练主函数
-print('etst')
+# print('etst')
 import tensorflow as tf
 import numpy as  np
 import os
@@ -10,6 +10,7 @@ from text_cnn import TextCNN
 from tensorflow.contrib import learn
 
 # Params  参数
+FLAGS=tf.flags.FLAGS
 tf.flags.DEFINE_float('dev_sample_percetage', 1, 'percentage training data in validation loop')
 # 正/负例数据
 tf.flags.DEFINE_string('positive_data_fill', './data/rt-polaritydata/rt-polarity.pos', 'positive samples')
@@ -30,12 +31,17 @@ tf.flags.DEFINE_integer('evaluate_every', 100, 'evaluate every time')  # 多少�
 tf.flags.DEFINE_integer('checkpoint_every', 100, 'save model every ...')  # 每个多少次保留一次模型
 
 # # Flags生效
-FLAGS = tf.flags.FLAGS
+# FLAGS = tf.flags.FLAGS
 # FLAGS._parse_flags() 弃用了
-FLAGS.flag_values_dict()
+# FLAGS.flag_values_dict()
+FLAGS._parse_flags()
 print('\nParameters:')
-for attr, value in sorted(FLAGS._flags().items()):
-    print(attr.upper(),'=',value)
+for attr, value in sorted(FLAGS.__flags.items()):
+    print("{}={}".format(attr.upper(), value))
+    # print(attr.upper(), '=', value)
     # print('{}={}').format(attr.upper(), value)
 
-x_text,y = data_helpers.load_data_and_labels(FLAGS.positive_data_fill,FLAGS.negative_data_fill)
+# 数据预处理
+# 载入数据
+print('loding data...')
+x_text, y = data_helpers.load_data_labels(FLAGS.positive_data_fill, FLAGS.negative_data_fill)
