@@ -2,9 +2,6 @@ import numpy as np
 import tensorflow as tf
 
 
-
-
-
 # 分类卷积网络的来构建
 class TextCNN(object):
     def __init__(self, sequence_length, num_classes, vocab_size, embedding_size, filter_sizes, num_filters,
