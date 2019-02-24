@@ -12,7 +12,11 @@ from text_cnn import TextCNN
 from tensorflow.contrib import learn
 
 # Params  参数
-FLAGS=tf.flags.FLAGS
+# FLAGS = tf.flags.FLAGS
+
+
+FLAGS = tf.flags.FLAGS
+
 tf.flags.DEFINE_float('dev_sample_percetage', 1, 'percentage training data in validation loop')
 # 正/负例数据
 tf.flags.DEFINE_string('positive_data_fill', './data/rt-polaritydata/rt-polarity.pos', 'positive samples')
@@ -39,13 +43,15 @@ tf.flags.DEFINE_boolean("log_device_placement", False, "Log placement of ops on 
 # # Flags生效
 # FLAGS = tf.flags.FLAGS
 # FLAGS._parse_flags() 弃用了
+
+
 # FLAGS.flag_values_dict()
-FLAGS._parse_flags()
+FLAGS.flag_values_dict()
 print('\nParameters:')
+
 for attr, value in sorted(FLAGS.__flags.items()):
-    print("{}={}".format(attr.upper(), value))
-    # print(attr.upper(), '=', value)
-    # print('{}={}').format(attr.upper(), value)
+    print("{}={}".format(attr.upper(), str(value.value)))
+
 
 # ===============================
 # 数据预处理
@@ -71,6 +77,9 @@ x_train,x_dev = x_shuffled[:dev_sample_index],x_shuffled[dev_sample_index:]
 y_train,y_dev = y_shuffled[:dev_sample_index],x_shuffled[dev_sample_index:]
 print('Vocabulary Size:{:d}'.format(len(vocab_processor.vocabulary_)))
 print('Train/Dev split:{:d}/{:d}'.format(len(y_train),len(y_dev)))
+
+
+
 
 # ============================
 # train
